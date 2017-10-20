@@ -19,6 +19,14 @@ define Device/pbr-d1
 endef
 TARGET_DEVICES += pbr-d1
 
+define Device/ap0165
+  DTS := AP0165
+  IMAGE_SIZE := $(ralink_default_fw_size_16M)
+  DEVICE_TITLE := CaryStudio AP0165
+  DEVICE_PACKAGES := kmod-usb2 kmod-usb-ohci
+endef
+TARGET_DEVICES += ap0165
+
 define Device/wrtnode2r
   DTS := WRTNODE2R
   IMAGE_SIZE := $(ralink_default_fw_size_16M)

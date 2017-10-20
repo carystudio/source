@@ -1,0 +1,21 @@
+#!/bin/sh
+#
+# Copyright (C) 2012 OpenWrt.org
+#
+
+. /lib/ramips.sh
+
+board=$(ramips_board_name)
+
+case "$board" in
+ap0165)
+	uci set wireless.radio0.disabled='0'	
+	uci set wireless.default_radio0.network='lan'
+	uci delete network.lan.ifname
+	uci set network.lan._orig_ifname='wlan0'
+	uci set network.lan._orig_bridge='true'
+	uci delete network.lan_dev
+	uci set wireless.default_radio0.ssid='MT7688'
+	uci commit
+	;;
+esac
