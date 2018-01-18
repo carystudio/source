@@ -272,8 +272,8 @@ oy-0001)
 pbr-d1)
 	set_usb_led "$board:orange:usb"
 	;;
-ap0165)
-	ucidef_set_led_default "wps" "WPS" "$board:green:wps" "0"
+ip04297)
+	ucidef_set_led_default "cpu" "CPU" "$board:green:cpu" "0"
 	ucidef_set_led_netdev "wlan" "wlan" "$board:green:wlan" "wlan0"
 	;;
 pbr-m1)

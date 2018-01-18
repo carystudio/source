@@ -195,9 +195,9 @@ ramips_setup_interfaces()
 	wrh-300cr)
 		ucidef_set_interface_lan "eth0"
 		;;
-	ap0165)
-		ucidef_set_interface_lan "eth0"
-		ucidef_set_interface_wan "eth0"
+	ip04297)
+		ucidef_set_interface_lan "eth0.1"
+		ucidef_set_interface_wan "eth0.2"
 		;;
 	c50)
 		ucidef_add_switch "switch0" \

@@ -379,8 +379,8 @@ ramips_board_detect() {
 	*"PBR-D1")
 		name="pbr-d1"
 		;;
-	*"AP0165")
-		name="ap0165"
+	*"IP04297")
+		name="ip04297"
 		;;
 	*"PBR-M1")
 		name="pbr-m1"

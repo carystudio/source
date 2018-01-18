@@ -8,7 +8,7 @@
 board=$(ramips_board_name)
 
 case "$board" in
-ap0165)
+ip04297)
 	uci set wireless.radio0.disabled='0'	
 	uci set wireless.default_radio0.network='lan'
 	uci delete network.lan.ifname
@@ -24,7 +24,7 @@ ap0165)
 	uci set button.wps=button
 	uci set button.wps.button='reset'
 	uci set button.wps.action='released'
-	uci set button.wps.handler='echo "wps..." > /dev/console;cd /var/run/hostapd;for socket in *; do [ -S "$socket" ] || continue; hostapd_cli -i "$socket" wps_pbc; done;echo "1">/sys/class/leds/ap0165:green:wps/brightness; sleep 120; echo "0">/sys/class/leds/ap0165:green:wps/brightness'
+	uci set button.wps.handler='echo "wps..." > /dev/console;cd /var/run/hostapd;for socket in *; do [ -S "$socket" ] || continue; hostapd_cli -i "$socket" wps_pbc; done;echo "1">/sys/class/leds/ip04297:green:wps/brightness; sleep 120; echo "0">/sys/class/leds/ip04297:green:wps/brightness'
 	uci set button.wps.min='0'
 	uci set button.wps.max='0'
 	uci set button.reboot=button

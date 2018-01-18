@@ -56,3 +56,11 @@ define Device/mac1200r-v2
   SUPPORTED_DEVICES := mac1200rv2
 endef
 TARGET_DEVICES += mac1200r-v2
+
+define Device/ip04297
+  DTS := IP04297
+  IMAGE_SIZE := $(ralink_default_fw_size_16M)
+  DEVICE_TITLE := CaryStudio IP04297
+  DEVICE_PACKAGES := kmod-usb2 kmod-usb-ohci
+endef
+TARGET_DEVICES += ip04297
