@@ -11,6 +11,15 @@ define Device/mt7628
 endef
 TARGET_DEVICES += mt7628
 
+define Device/ip04296
+  DTS := IP04296
+  BLOCKSIZE := 64k
+  IMAGE_SIZE := $(ralink_default_fw_size_8M)
+  DEVICE_TITLE := MediaTek IP04296 EVB
+  DEVICE_PACKAGES := kmod-usb2 kmod-usb-ohci kmod-usb-ledtrig-usbport
+endef
+TARGET_DEVICES += ip04296
+
 define Device/miwifi-nano
   DTS := MIWIFI-NANO
   IMAGE_SIZE := $(ralink_default_fw_size_16M)
