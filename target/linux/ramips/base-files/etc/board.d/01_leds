@@ -276,6 +276,10 @@ ip04297)
 	ucidef_set_led_default "cpu" "CPU" "$board:green:cpu" "0"
 	ucidef_set_led_netdev "wlan" "wlan" "$board:green:wlan" "wlan0"
 	;;
+ip04296)
+	ucidef_set_led_default "wps" "WPS" "$board:amber:status" "0"		
+ 	ucidef_set_led_netdev "wlan" "WLAN" "$board:amber:wlan" "wlan0"
+        ;;
 pbr-m1)
 	ucidef_set_led_netdev "internet" "internet" "$board:blue:internet" "eth0.2"
 	ucidef_set_led_default "power" "power" "$board:blue:power" "1"

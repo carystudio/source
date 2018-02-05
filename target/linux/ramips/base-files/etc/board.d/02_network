@@ -199,6 +199,12 @@ ramips_setup_interfaces()
 		ucidef_set_interface_lan "eth0.1"
 		ucidef_set_interface_wan "eth0.2"
 		;;
+	ip04296)
+		ucidef_add_switch "switch0" \
+                        "1:lan:1" "2:lan:2" "3:lan:3" "4:lan:4" "0:wan" "6@eth0"    
+		ucidef_add_switch_vlan "switch0" "1" "1 2 3 4 6t"  
+		ucidef_add_switch_vlan "switch0" "2" "0 6t"
+		;;
 	c50)
 		ucidef_add_switch "switch0" \
 			"1:lan:3" "2:lan:4" "3:lan:1" "4:lan:2" "0:wan" "6@eth0"

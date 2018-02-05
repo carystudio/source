@@ -64,3 +64,13 @@ define Device/ip04297
   DEVICE_PACKAGES := kmod-usb2 kmod-usb-ohci
 endef
 TARGET_DEVICES += ip04297
+
+define Device/ip04296
+  DTS := IP04296
+  BLOCKSIZE := 64k
+  IMAGE_SIZE := $(ralink_default_fw_size_16M)
+  DEVICE_TITLE := MediaTek IP04296 EVB 
+  DEVICE_PACKAGES := kmod-usb2 kmod-usb-ohci
+endef
+TARGET_DEVICES += ip04296
+

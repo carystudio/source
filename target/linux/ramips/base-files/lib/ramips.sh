@@ -382,6 +382,9 @@ ramips_board_detect() {
 	*"IP04297")
 		name="ip04297"
 		;;
+	*"IP04296")
+                name="ip04296"
+                ;;
 	*"PBR-M1")
 		name="pbr-m1"
 		;;

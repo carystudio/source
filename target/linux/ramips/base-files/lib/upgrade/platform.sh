@@ -108,6 +108,7 @@ platform_check_image() {
 	oy-0001|\
 	pbr-d1|\
 	ip04297|\
+	ip04296|\
 	pbr-m1|\
 	psg1208|\
 	psg1218|\
